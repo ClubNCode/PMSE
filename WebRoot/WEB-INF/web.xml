@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.student.Util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.student.action.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.student.action.RegisterAction</servlet-class>
+  </servlet>
+   
+    <servlet>
+    <servlet-name>DeleteUserAction</servlet-name>
+    <servlet-class>com.student.action.DeleteUserAction</servlet-class>
+  </servlet>
+  <servlet>
+   
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.student.action.LoginAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.student.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.student.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+	
+	
+	<servlet>
+   <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.student.action.ChekUserAction</servlet-class>
+  </servlet>
+	
+	
+	<servlet>
+   <servlet-name>ViewUsersAction</servlet-name>
+    <servlet-class>com.student.action.ViewUsersAction</servlet-class>
+  </servlet>
+	
+	<servlet>
+   <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.student.action.LogoutAction</servlet-class>
+  </servlet>
+  
+     <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadDataAction</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction</servlet-class>
+    </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDataAction</servlet-name>
+    <servlet-class>com.student.action.GetDataAction</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTFvalueAction</servlet-name>
+    <servlet-class>com.student.action.GetTFvalueAction</servlet-class>
+    </servlet>
+    
+    
+    
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGraphAction</servlet-name>
+    <servlet-class>com.student.action.GetGraphAction</servlet-class>
+    </servlet>
+    
+     <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewServerDataAction</servlet-name>
+    <servlet-class>com.student.action.ViewServerDataAction</servlet-class>
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDataAction</servlet-name>
+    <servlet-class>com.student.action.DeleteDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSearchDataAction</servlet-name>
+    <servlet-class>com.student.action.ViewSearchDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserSearchInfoAction</servlet-name>
+    <servlet-class>com.student.action.UserSearchInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertUserAction</servlet-name>
+    <servlet-class>com.student.action.InsertUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WriteDocAction</servlet-name>
+    <servlet-class>com.student.action.WriteDocAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserSelectDataAction</servlet-name>
+    <servlet-class>com.student.action.UserSelectDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertWordAction</servlet-name>
+    <servlet-class>com.student.action.InsertWordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TreeAction</servlet-name>
+    <servlet-class>com.student.action.TreeAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+    
+    
+  <servlet-mapping>
+	<servlet-name>ViewServerDataAction</servlet-name>
+	<url-pattern>/ViewServerDataAction</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+	<servlet-name>GetTFvalueAction</servlet-name>
+	<url-pattern>/GetTFvalueAction</url-pattern>
+	</servlet-mapping>
+	
+ <servlet-mapping>
+	<servlet-name>GetGraphAction</servlet-name>
+	<url-pattern>/GetGraphAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+	<servlet-name>GetDataAction</servlet-name>
+	<url-pattern>/GetDataAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>ChangePasswordAction</servlet-name>
+	<url-pattern>/ChangePasswordAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>UploadDataAction</servlet-name>
+	<url-pattern>/UploadDataAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>DeleteUserAction</servlet-name>
+	<url-pattern>/DeleteUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>RegisterAction</servlet-name>
+	<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LoginAction</servlet-name>
+	<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LogoutAction</servlet-name>
+	<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping>
+	<servlet-name>ChekUserAction</servlet-name>
+	<url-pattern>/ChekUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>ViewUsersAction</servlet-name>
+	<url-pattern>/ViewUsersAction</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDataAction</servlet-name>
+    <url-pattern>/DeleteDataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSearchDataAction</servlet-name>
+    <url-pattern>/ViewSearchDataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserSearchInfoAction</servlet-name>
+    <url-pattern>/UserSearchInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertUserAction</servlet-name>
+    <url-pattern>/InsertUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteDocAction</servlet-name>
+    <url-pattern>/WriteDocAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserSelectDataAction</servlet-name>
+    <url-pattern>/UserSelectDataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertWordAction</servlet-name>
+    <url-pattern>/InsertWordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TreeAction</servlet-name>
+    <url-pattern>/TreeAction</url-pattern>
+  </servlet-mapping>
+ 
+  
+ 
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <context-param>
+        <param-name>com.icesoft.faces.debugDOMUpdate</param-name>
+        <param-value>false</param-value>
+    </context-param>
+
+    
+    
+    <context-param>
+        <param-name>com.icesoft.faces.concurrentDOMViews</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>com.icesoft.faces.synchronousUpdate</param-name>
+        <param-value>true</param-value>
+    </context-param>
+	
+	<listener>
+		<listener-class>com.icesoft.faces.util.event.servlet.ContextEventRepeater</listener-class>
+	</listener>
+  
+    <!-- Faces Servlet -->
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Persistent Faces Servlet</servlet-name>
+        <servlet-class>com.icesoft.faces.webapp.xmlhttp.PersistentFacesServlet</servlet-class>
+        <load-on-startup> 1 </load-on-startup>
+    </servlet>
+
+ 
+      <servlet>
+        <servlet-name>Blocking Servlet</servlet-name>
+        <servlet-class>com.icesoft.faces.webapp.xmlhttp.BlockingServlet</servlet-class>
+        <load-on-startup> 1 </load-on-startup>
+    </servlet>
+
+    <!-- extension mapping -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+
+  
+	
+    <servlet-mapping>
+        <servlet-name>Persistent Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Persistent Faces Servlet</servlet-name>
+        <url-pattern>*.iface</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Persistent Faces Servlet</servlet-name>
+        <url-pattern>/xmlhttp/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Blocking Servlet</servlet-name>
+        <url-pattern>/block/*</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+      <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- Welcome files -->
+    <!--<welcome-file-list>
+        <welcome-file>index.jsf</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+  
+  --><context-param>
+  <param-name>org.ajax4jsf.VIEW_HANDLERS</param-name>
+  <param-value>com.sun.facelets.FaceletViewHandler</param-value>
+  </context-param>
+  <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>server</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/WEB-INF/faces-config.xml</param-value>
+    </context-param> 
+
+    <listener>
+        <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+    </listener>
+
+   <!-- Faces Servlet -->
+	
+   <!--
+
+ 
+     Faces Servlet Mapping 
+    --><servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>  
+	
+	<servlet>
+		<servlet-name>Rcfaces Framework Contents</servlet-name>
+		<servlet-class>org.rcfaces.renderkit.html.internal.resource.ResourcesServlet</servlet-class>
+		<init-param>
+			<param-name>org.rcfaces.renderkit.html.javascript.sets.CORE</param-name>
+			<param-value>
+				basicComponent,message,extraButton,tree,dataGrid
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>
+			Rcfaces Application Contents
+		</servlet-name>
+		<servlet-class>
+			org.rcfaces.core.internal.contentStorage.ContentStorageServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadMetaDataAction</servlet-name>
+    <servlet-class>com.student.action.UploadMetaDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSearchDataAction1</servlet-name>
+    <servlet-class>com.student.action.ViewSearchDataAction1</servlet-class>
+  </servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>
+			Rcfaces Framework Contents
+		</servlet-name>
+		<url-pattern>/rcfaces/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>
+			Rcfaces Application Contents
+		</servlet-name>
+		<url-pattern>/rc-content/*</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadMetaDataAction</servlet-name>
+    <url-pattern>/UploadMetaDataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSearchDataAction1</servlet-name>
+    <url-pattern>/ViewSearchDataAction1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
